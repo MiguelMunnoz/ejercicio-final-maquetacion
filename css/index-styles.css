@@ -84,6 +84,7 @@ input[type="radio"] {
 
 .main-champion-select-grid-roles h3{
     margin: 0;
+    margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
     font-family: "FF Mark W05", Arial, sans-serif;
@@ -244,6 +245,10 @@ input[type="radio"] {
         justify-items: center;
         align-items: center;
         align-content: center;
+    }
+
+    .main-champion-select-grid-roles h3 { 
+        margin: 0;
     }
 
     .main-champion-select-grid-roles h2 { 
