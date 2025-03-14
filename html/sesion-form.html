@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESION FORM</title>
+    <link rel="stylesheet" href="../css/header-styles.css">
+    <link rel="stylesheet" href="../css/footer-styles.css">
+    <link rel="stylesheet" href="../css/sesion-form.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+
+            <div class="header-logo">
+                <a href="/html/index.html">
+                    <img class="header-logo-img" src="../images/logo-lol.png" alt="League of Legends Logo">
+                </a>
+            </div>
+
+            <div>
+                <ul class="header-nav-list">
+                    <li><a href="index.html" class="header-nav-list-item">HOME</a></li>
+                    <li><a href="champions.html" class="header-nav-list-item">CAMPEONES</a></li>
+                    <li><a href="#" class="header-nav-list-item">NOTICIAS</a></li>
+                    <li><a href="#" class="header-nav-list-item">E-SPORTS</a></li>
+                </ul>
+            </div>
+
+            <div class="header-nav-menu-login">     
+                <div id="header-nav-login">
+                    <a href="sesion-form.html" id="header-nav-login-link">INICIAR SESIÓN</a>
+                </div>
+                
+                <div class="header-nav-dropdown">
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle" class="header-nav-dropdown-button">☰</label>    
+                    <div class="header-nav-dropdown-menu">
+                        <ul class="header-nav-dropdown-menu-list">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="champions.html">CAMPEONES</a></li>
+                            <li><a href="#">NOTICIAS</a></li>
+                            <li><a href="#">E-SPORTS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Overlay (fondo oscuro cuando el menú está abierto) -->
+                    <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="main-content-wrapper">
+            <h2>Formulario de Registro</h2>
+            <form action="" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+                <label for="color-favorito">Color favorito:</label>
+                <input type="color" id="color-favorito" name="color-favorito">
+
+                <label for="archivo">Subir archivo:</label>
+                <input type="file" id="archivo" name="archivo">
+
+                <input type="submit" value="Registrarse">
+            </form>
+        </div> 
+    </main>
+    
+    <footer class="footer">
+
+        <div class="footer-container">
+            <ul class="footer-flexContainer">
+                <li class="footer-flexContainer-list-option">ACERCA DE LEAGUE OF LEGENDS</li>
+                <li class="footer-flexContainer-list-option">ESTADO DEL SERVIDOR</li>
+                <li class="footer-flexContainer-list-option">ASISTENCIA</li>
+                <li class="footer-flexContainer-list-option">DESCARGAR LA APLICACIÓN PARA MÓVILES DE RIOT MOBILE</li>
+            </ul>
+        </div>
+
+        <div class="footer-riotLogo">
+            <a class="footer-riotLogo-link" href="#">
+                <img id="footer-riotLogo-img" src="../images/logo-riot.png" alt="Riot Logo">
+            </a>
+        </div>
+
+        <div class="footer-copyrigth">
+            <p>
+                ™ &amp; © 2025 Riot Games, Inc. Todos los derechos reservados. Riot Games, League of Legends y PvP.net son marcas comerciales o marcas registradas de Riot Games, Inc.
+            </p>
+        </div>
+
+        <div class="footer-banner">
+            <div class="logo-wrapper">
+                <a href="https://www.pegi.info/" target="_blank">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/30c8b5b3a9dc0517b2daae20f00d07980b25560a-56x68.png?&amp;h=100&amp;fit=max" alt="PEGI 12 Logo" title="PEGI 12 Logo">
+                </a>
+            </div>
+            <div class="logo-wrapper">
+                <a href="http://www.usk.de/en" target="_blank">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/ebd9a11d3f346f69b3b816cc29a47d5eb66dedb4-68x68.png?&amp;h=100&amp;fit=max" alt="USK 12 Logo" title="USK 12 Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

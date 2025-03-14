@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="../css/header-styles.css">
+    <link rel="stylesheet" href="../css/footer-styles.css">
+    <link rel="stylesheet" href="../css/index-styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+
+            <div class="header-logo">
+                <a href="/html/index.html">
+                    <img class="header-logo-img" src="../images/logo-lol.png" alt="League of Legends Logo">
+                </a>
+            </div>
+
+            <div>
+                <ul class="header-nav-list">
+                    <li><a href="index.html" class="header-nav-list-item">HOME</a></li>
+                    <li><a href="champions.html" class="header-nav-list-item">CAMPEONES</a></li>
+                    <li><a href="#" class="header-nav-list-item">NOTICIAS</a></li>
+                    <li><a href="#" class="header-nav-list-item">E-SPORTS</a></li>
+                </ul>
+            </div>
+
+            <div class="header-nav-menu-login">     
+                <div id="header-nav-login">
+                    <a href="sesion-form.html" id="header-nav-login-link">INICIAR SESIÓN</a>
+                </div>
+                
+                <div class="header-nav-dropdown">
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle" class="header-nav-dropdown-button">☰</label>    
+                    <div class="header-nav-dropdown-menu">
+                        <ul class="header-nav-dropdown-menu-list">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="champions.html">CAMPEONES</a></li>
+                            <li><a href="#">NOTICIAS</a></li>
+                            <li><a href="#">E-SPORTS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Overlay (fondo oscuro cuando el menú está abierto) -->
+                    <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main-background-video">
+            <div class="main-background-video-container">
+                <div class="main-background-video-container-flex">
+                    <img src="../images/big-logo-lol.png" alt="Main League of Legends Logo">
+                </div>
+                <video id="background-video" autoplay muted loop>
+                    <source src="../videos/home_page_background_video.webm" type="video/webm">
+                </video>
+            </div>
+        </section>
+
+        <section class="main-champion-select">
+            <div id="contains-grid">
+                <div class="main-champion-select-grid">
+                    <input type="radio" name="champion-role" id="champion-role-radio1" checked>
+                    <input type="radio" name="champion-role" id="champion-role-radio2">
+                    <input type="radio" name="champion-role" id="champion-role-radio3">
+                    <input type="radio" name="champion-role" id="champion-role-radio4">
+                    <input type="radio" name="champion-role" id="champion-role-radio5">
+                    <input type="radio" name="champion-role" id="champion-role-radio6">
+
+                    <div class="main-champion-select-grid-roles">
+                        <div>
+                            <h3>elige a tu</h3>
+                        </div>
+                        <div>
+                            <h2>Campeón</h2>
+                        </div>
+                        <div>
+                            <p>Lanzarse en medio del combate, apoyar a tus aliados... Prefieras lo que prefieras, encontrarás tu sitio en la Grieta</p>
+                        </div>
+                        <div class="main-champion-select-grid-roles-links">
+                            <a id="champion-pool" href="champions.html">Descubrir más campeones</a>
+                            <a id="play-now" href="sesion-form.html">Jugar ahora </a>
+                        </div>
+
+                        <div>
+                            <ul class="main-champion-select-grid-roles-icons">
+                                <li>
+                                    <label for="champion-role-radio1">
+                                        <img src="../images/roles/asesinos.png" alt="Assassin's Role Logo">
+                                        <p>Asesinos</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="champion-role-radio2">
+                                        <img src="../images/roles/luchadores.png" alt="Fighter's Role Logo">
+                                        <p>Luchadores</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="champion-role-radio3">
+                                        <img src="../images/roles/magos.png" alt="Wizard's Role Logo">
+                                        <p>Magos</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="champion-role-radio4">
+                                        <img src="../images/roles/tiradores.png" alt="Shooter's Role Logo">
+                                        <p>Tiradores</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="champion-role-radio5">
+                                        <img src="../images/roles/apoyos.png" alt="Support's Role Logo">
+                                        <p>Apoyos</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="champion-role-radio6">
+                                        <img src="../images/roles/tanques.png" alt="Tank's Role Logo">
+                                        <p>Tanques</p>
+                                    </label>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="main-champion-select-grid-images">
+                        <div class="main-champion-select-grid-images-elements" id="example1">
+                            <img src="../images/champions/akali-pose.png" alt="Assassin Champion Example">
+                            <h4>akali</h4>
+                            <h5>la asesina sigilosa</h5>
+                        </div>
+                       
+                        <div class="main-champion-select-grid-images-elements" id="example2">
+                            <img src="../images/champions/yasuo-pose.png" alt="Fighter Champion Example">
+                            <h4>yasuo</h4>
+                            <h5>la espada sin honor</h5>
+                        </div>
+
+                        <div class="main-champion-select-grid-images-elements" id="example3">
+                            <img src="../images/champions/lux-pose.png" alt="Wizard Champion Example">
+                            <h4>lux</h4>
+                            <h5>la dama luminosa</h5>
+                        </div>
+
+                        <div class="main-champion-select-grid-images-elements" id="example4">
+                            <img src="../images/champions/jinx-pose.png" alt="Shooter Champion Example">
+                            <h4>jinx</h4>
+                            <h5>la bala perdida</h5>
+                        </div>
+
+                        <div class="main-champion-select-grid-images-elements" id="example5">
+                            <img src="../images/champions/thresh-pose.png" alt="Support Champion Example">
+                            <h4>thresh</h4>
+                            <h5>el carcelero implacable</h5>
+                        </div>
+
+                        <div class="main-champion-select-grid-images-elements" id="example6">
+                            <img src="../images/champions/leona-pose.png" alt="Tank Champion Example">
+                            <h4>leona</h4>
+                            <h5>el amanecer radiante</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+            <ul class="footer-flexContainer">
+                <li class="footer-flexContainer-list-option">ACERCA DE LEAGUE OF LEGENDS</li>
+                <li class="footer-flexContainer-list-option">ESTADO DEL SERVIDOR</li>
+                <li class="footer-flexContainer-list-option">ASISTENCIA</li>
+                <li class="footer-flexContainer-list-option">DESCARGAR LA APLICACIÓN PARA MÓVILES DE RIOT MOBILE</li>
+            </ul>
+        </div>
+
+        <div class="footer-riotLogo">
+            <a class="footer-riotLogo-link" href="#">
+                <img id="footer-riotLogo-img" src="../images/logo-riot.png" alt="Riot Logo">
+            </a>
+        </div>
+
+        <div class="footer-copyrigth">
+            <p>
+                ™ &amp; © 2025 Riot Games, Inc. Todos los derechos reservados. Riot Games, League of Legends y PvP.net son marcas comerciales o marcas registradas de Riot Games, Inc.
+            </p>
+        </div>
+
+        <div class="footer-banner">
+            <div class="logo-wrapper">
+                <a href="https://www.pegi.info/" target="_blank">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/30c8b5b3a9dc0517b2daae20f00d07980b25560a-56x68.png?&amp;h=100&amp;fit=max" alt="PEGI 12 Logo" title="PEGI 12 Logo">
+                </a>
+            </div>
+            <div class="logo-wrapper">
+                <a href="http://www.usk.de/en" target="_blank">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/ebd9a11d3f346f69b3b816cc29a47d5eb66dedb4-68x68.png?&amp;h=100&amp;fit=max" alt="USK 12 Logo" title="USK 12 Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

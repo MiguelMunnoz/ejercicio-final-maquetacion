@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAMPION DETAILS</title>
+    <link rel="stylesheet" href="../css/header-styles.css">
+    <link rel="stylesheet" href="../css/footer-styles.css">
+    <link rel="stylesheet" href="../css/champion-details.css">
+</head>
+<body>
+    <body>
+        <header class="header">
+            <nav class="header-nav">
+    
+                <div class="header-logo">
+                    <a href="/html/index.html">
+                        <img class="header-logo-img" src="../images/logo-lol.png" alt="League of Legends Logo">
+                    </a>
+                </div>
+    
+                <div>
+                    <ul class="header-nav-list">
+                        <li><a href="index.html" class="header-nav-list-item">HOME</a></li>
+                        <li><a href="champions.html" class="header-nav-list-item">CAMPEONES</a></li>
+                        <li><a href="#" class="header-nav-list-item">NOTICIAS</a></li>
+                        <li><a href="#" class="header-nav-list-item">E-SPORTS</a></li>
+                    </ul>
+                </div>
+    
+                <div class="header-nav-menu-login">     
+                    <div id="header-nav-login">
+                        <a href="sesion-form.html" id="header-nav-login-link">INICIAR SESIÓN</a>
+                    </div>
+                    
+                    <div class="header-nav-dropdown">
+                        <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                        <label for="dropdown-toggle" class="header-nav-dropdown-button">☰</label>    
+                        <div class="header-nav-dropdown-menu">
+                            <ul class="header-nav-dropdown-menu-list">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="champions.html">CAMPEONES</a></li>
+                                <li><a href="#">NOTICIAS</a></li>
+                                <li><a href="#">E-SPORTS</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Overlay (fondo oscuro cuando el menú está abierto) -->
+                        <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <main class="main-content">
+        <section class="main-content-splashart">
+            <img id="photo" src="../images/aatrox-splashArt.jpg" alt="">
+        </section>
+
+            <section class="main-content-info">
+                <div>
+                    <h2>La espada de los oscuros</h2>
+                </div>
+                <div>
+                    <h3>aatrox</h3>
+                </div>
+                <div>
+                    <p>Aatrox y sus hermanos, otrora respetados defensores de Shurima contra el Vacío, acabarían convirtiéndose en una amenaza aún mayor para Runaterra y solo conocieron la derrota ante el uso astuto de hechizos mortales. No obstante, tras siglos de reclusión, Aatrox fue el primero en recuperar su libertad y se dedicó a corromper y transformar a cualquier necio que intentase empuñar el arma mágica que contenía su esencia. Ahora, envuelto en carne y huesos que no le pertenecen y que ha transformado en una horrenda aproximación de su antiguo aspecto, recorre Runaterra en busca de la apocalíptica venganza que tanto anhela.</p>
+                </div>
+                <div class="main-content-info-dificulty">
+                    <img src="../images/img-dif.jpg" alt="Imagen que muestra la dificultad del personaje.">
+                    <img src="../images/img-rol.jpg" alt="Imagen que muestra el rol del personaje.">
+                </div>
+            </section>
+
+            <section class="main-content-skills">
+                <div>
+                    <div><h3>Habilidades</h3></div>
+                    <ul class="main-content-skills-icons">      
+                        <li><label class="label-skill" for="skill1"><img src="../images/skills/aatrox-skill-1.jpg" alt="Pasive Skill Icon">
+                                <p>Aspecto de la muerte</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="label-skill" for="skill2"><img src="../images/skills/aatrox-skill-2.jpg" alt="First Skill Icon">
+                                <p>La espada de los oscuros</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="label-skill" for="skill3"><img src="../images/skills/aatrox-skill-3.jpg" alt="Second Skill Icon">
+                                <p>Cadenas infernales</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="label-skill" for="skill4"><img src="../images/skills/aatrox-skill-4.jpg" alt="Third Skill Icon">
+                                <p>Deslizamiento sombrío</p>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="label-skill" for="skill5"><img src="../images/skills/aatrox-skill-5.jpg" alt="Definitive Skill Icon">
+                                <p>El aniquilador de mundos</p>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-content-skills-video">
+                    <div class="main-content-skills-video-flex">
+                        <div id="video-wrapper">
+                            <div>
+                                <!-- Radio Buttons ocultos-->
+                                <input type="radio" id="skill1" name="skills-prueba" checked>
+                                <input type="radio" id="skill2" name="skills-prueba">
+                                <input type="radio" id="skill3" name="skills-prueba">
+                                <input type="radio" id="skill4" name="skills-prueba">
+                                <input type="radio" id="skill5" name="skills-prueba">
+                                
+                                <!-- Contenido que cambia según el botón seleccionado -->
+                                <div class="main-content-skills-video-flex-container">
+                                    <div class="main-content-skills-video-flex-item" id="skill-video1">
+                                        <video autoplay muted loop>
+                                            <source src="../videos/aatrox_skill_1.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                    <div class="main-content-skills-video-flex-item" id="skill-video2">
+                                        <video autoplay muted loop>
+                                            <source src="../videos/aatrox_skill_2.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                    <div class="main-content-skills-video-flex-item" id="skill-video3">
+                                        <video autoplay muted loop>
+                                            <source src="../videos/aatrox_skill_3.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                    <div class="main-content-skills-video-flex-item" id="skill-video4">
+                                        <video autoplay muted loop>
+                                            <source src="../videos/aatrox_skill_4.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                    <div class="main-content-skills-video-flex-item" id="skill-video5">
+                                        <video autoplay muted loop>
+                                            <source src="../videos/aatrox_skill_5.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+            <ul class="footer-flexContainer">
+                <li class="footer-flexContainer-list-option">ACERCA DE LEAGUE OF LEGENDS</li>
+                <li class="footer-flexContainer-list-option">ESTADO DEL SERVIDOR</li>
+                <li class="footer-flexContainer-list-option">ASISTENCIA</li>
+                <li class="footer-flexContainer-list-option">DESCARGAR LA APLICACIÓN PARA MÓVILES DE RIOT MOBILE</li>
+            </ul>
+        </div>
+
+        <div class="footer-riotLogo">
+            <a class="footer-riotLogo-link" href="#">
+                <img id="footer-riotLogo-img" src="../images/logo-riot.png" alt="Riot Logo">
+            </a>
+        </div>
+
+        <div class="footer-copyrigth">
+            <p>
+                ™ &amp; © 2025 Riot Games, Inc. Todos los derechos reservados. Riot Games, League of Legends y PvP.net son marcas comerciales o marcas registradas de Riot Games, Inc.
+            </p>
+        </div>
+
+        <div class="footer-banner">
+            <div class="logo-wrapper">
+                <a href="https://www.pegi.info/" target="_blank">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/30c8b5b3a9dc0517b2daae20f00d07980b25560a-56x68.png?&amp;h=100&amp;fit=max" alt="PEGI 12 Logo" title="PEGI 12 Logo">
+                </a>
+            </div>
+            <div class="logo-wrapper">
+                <a href="http://www.usk.de/en" target="_blank">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/ebd9a11d3f346f69b3b816cc29a47d5eb66dedb4-68x68.png?&amp;h=100&amp;fit=max" alt="USK 12 Logo" title="USK 12 Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

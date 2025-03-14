@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main-content {
+    background: linear-gradient(white, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.intro {
+    text-align: center;
+    font-family: "FF Mark W05", Arial, sans-serif;
+}
+
+.champs {
+    display: grid;
+    min-height: 60dvh;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(0, minmax(150px, auto));
+    grid-auto-rows: minmax(150px, auto);
+    grid-auto-flow: dense;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    
+    padding: 15px;
+    border-top: 2px solid white;
+    box-sizing: border-box;
+    
+}
+
+.champs-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.champs-info div {
+    overflow: hidden;
+}
+
+.champs-info div>a {
+    padding: 0;
+}
+
+.champs-info div>a>img {
+    margin: auto;
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+}
+
+.champs-info a{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    
+    background-color: rgb(51, 51, 51);
+    color: #d09c3c;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.champs-info:hover .champs-info-name {
+    background-color: rgb(99, 98, 98);
+}
+
+.champs-info:hover img{
+    transform: scale(1.2);  /* Aumenta el tamaño de la imagen */
+    opacity: 0.7;           /* Reduce la opacidad de la imagen */
+}
+
+.before-footer {
+    margin-top: 10px;
+}
+
+
+@media (min-width: 1024px) {
+    .champs {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .champs {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .champs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .champs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 300px) {
+    .champs {
+        grid-template-columns: repeat(1, 0.5fr);
+    }
+}
+
+
+
+

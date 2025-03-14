@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ponomar&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********************************************* Primera Seccion *********************************************/
+.main-background-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow-x: hidden;
+    height: 50vh;
+}
+
+.main-background-video-container {
+    position: relative;
+    width: 100vw; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+.main-background-video-container-flex {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 250px; 
+    height: auto; 
+    border: 2px solid white;
+}
+
+.main-background-video-container-flex img {
+    width: 100%;
+}
+
+.main-background-video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+/********************************************* Segunda Seccion *********************************************/
+
+.main-champion-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+
+#contains-grid {
+    background-image: url("../images/fondo-rol-select.svg");
+    background-size: cover;
+}
+
+.main-champion-select-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Ocultar los radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+.main-champion-select-grid-roles {
+    font-family: "Big+Shoulders+Stencil";
+    text-align: center;
+}
+
+.main-champion-select-grid-roles h3{
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.main-champion-select-grid-roles h2{
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "Big+Shoulders+Stencil";
+    font-style: italic;
+
+}
+
+.main-champion-select-grid-roles p{
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-style: italic;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.main-champion-select-grid-roles-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-champion-select-grid-roles-links a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    width: 75%;
+}
+
+#champion-pool {
+    font-family: "FF Mark W05", Arial, sans-serif;
+    background-color: #55b6bd;
+}
+
+#champion-pool:hover {
+    background-color: #68c5cc;
+}
+
+#play-now {
+    font-family: "FF Mark W05", Arial, sans-serif;
+    background-color: #c4a161;
+}
+
+#play-now:hover {
+    background-color: #d3b172;
+}
+
+.main-champion-select-grid-roles-icons {
+    list-style: none;
+    padding: 0;
+
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.main-champion-select-grid-roles-icons li {
+    margin-top: 15px;
+    font-size: 0.7rem;
+    font-family: "Big+Shoulders+Stencil";
+}
+
+.main-champion-select-grid-roles-icons li:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.main-champion-select-grid-roles-icons label {
+    cursor: pointer;
+}
+
+.main-champion-select-grid-roles-icons label p {
+    padding: 0;
+}
+
+.main-champion-select-grid-roles-icons li img {
+    width: 48px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+    animation: cambioColor 2s infinite alternate;
+}
+
+@keyframes cambioColor {
+    from {
+        border: 2px solid black;
+    }
+    to {
+        border: 2px solid #c4a161;
+    }
+}
+
+.main-champion-select-grid-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-champion-select-grid-images-elements {
+    display: none;
+    text-align: center;
+    font-family: "Big+Shoulders+Stencil";
+    font-style: italic;
+    font-weight: bold;
+}
+
+.main-champion-select-grid-images-elements h4 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-champion-select-grid-images-elements h5 {
+    margin-top: 0;
+    text-transform: capitalize;
+    font-family: "Ponomar";
+    font-size: 1rem;
+}
+
+
+.main-champion-select-grid-images-elements img {
+    width: 100%;
+}
+
+/* Mostrar solo el contenido correspondiente al botón seleccionado */
+#champion-role-radio1:checked ~ .main-champion-select-grid-images #example1,
+#champion-role-radio2:checked ~ .main-champion-select-grid-images #example2,
+#champion-role-radio3:checked ~ .main-champion-select-grid-images #example3,
+#champion-role-radio4:checked ~ .main-champion-select-grid-images #example4,
+#champion-role-radio5:checked ~ .main-champion-select-grid-images #example5,
+#champion-role-radio6:checked ~ .main-champion-select-grid-images #example6 {
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .main-background-video {
+        height: 70vh;
+    }
+
+    .main-background-video-container-flex {
+        width: 400px;
+    }
+
+    .main-champion-select-grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .main-champion-select-grid-roles h2 { 
+        margin-bottom: 30px;
+    }
+
+    .main-champion-select-grid-roles p { 
+        margin-bottom: 15px;
+    }
+
+    #play-now {
+        margin-bottom: 15px;
+    }
+
+    .main-champion-select-grid-roles-icons li {
+        margin-top: 25px;
+        font-size: 0.7rem;
+        font-family: "Big+Shoulders+Stencil";
+    }
+}
+
+
